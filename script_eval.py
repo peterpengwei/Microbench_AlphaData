@@ -10,7 +10,7 @@ filename_dict = {4:"64", 5:"128", 6:"256", 7:"512", 8:"1k", 9:"2k",
 start = int(sys.argv[1])
 end = int(sys.argv[2])
 
-os.system("rm -rf eval_results/*")
+os.system("rm -rf eval_results; mkdir eval_results")
 
 for i in xrange(start, end+1):
   dir_name = "res_" + filename_dict[i]
